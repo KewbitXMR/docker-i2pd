@@ -1,0 +1,11 @@
+version: '3'
+services:
+  i2pd:
+    image: i2pd/i2pd
+    ports:
+      - "7070:7070"
+      - "4444:4444"
+      - "4447:4447"
+      - "9439:9439"
+    restart: unless-stopped
+    tty: true
